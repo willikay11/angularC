@@ -1,0 +1,31 @@
+    <!-- Header div-->
+    <div class = "header">
+      <div class = "center vertical corners">
+        <div class="toolbar top-corners">
+          <h2 class="span">Login</h2>
+        </div>
+        <!-- Login Form-->
+         <form role="form">
+          <div class="form-group padding">
+            <input type="email" ng-model = "email" class="form-control center-text" id="email" placeholder="Email">
+          </div>
+          <div class="form-group padding">
+            <input type="password" ng-model = "password" class="form-control center-text" id="pwd" placeholder="Password">
+          </div>
+          <div class="checkbox center padding">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <div class="padding">
+            <button type="submit" id ="save" ng-click="login()" class="btn btn-default btn-block submit" >Submit</button>
+            {{message}}
+          </div>
+
+          <div style="width: 50%; margin:auto;" class="padding">
+            <a class="center" href="#register">Register Here</a>
+            <label>or</label>
+            <a  class="center" href="">Forgot Password?</a>
+          </div>
+          
+        </form>
+      </div>
+    </div>

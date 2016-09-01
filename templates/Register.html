@@ -1,0 +1,60 @@
+    <!-- Header div-->
+    <div class = "header">
+      <div class = "center vertical corners">
+        <div class="toolbar top-corners">
+          <h2 class="span">Register</h2>
+        </div>
+        <!-- Register Form-->
+         <form role="form" name="registration">
+          <div class="form-group padding">
+            <input type="text" class="form-control center-text" id="fname" name="firstname" placeholder="First Name" ng-model="firstname" required>
+            <div ng-messages="registration.firstname.$error">
+              <div ng-message="required">This field is required</div>
+            </div>
+          </div>
+
+          <div class="form-group padding">
+            <input type="text" class="form-control center-text" id="sname" name="secondname" placeholder="Second Name" ng-model="secondname" required>
+            <div ng-messages="registration.secondname.$error">
+              <div ng-message="required">This field is required</div>
+            </div>           
+          </div>
+
+          <div class="form-group padding">
+            <input type="email" class="form-control center-text" id="email" name = "email" placeholder="Email" ng-model="email" required>
+            <div ng-messages="registration.email.$error">
+              <div ng-message="required">This field is required</div>
+            </div>
+          </div>
+
+          <div class="form-group padding">
+            <input type="password" class="form-control center-text" id="pwd" name = "password" placeholder="Password" ng-model="password" required>
+            <div ng-messages="registration.password.$error">
+              <div ng-message="required">This field is required</div>
+            </div>            
+          </div>
+
+          <div class="form-group padding">
+            <input type="password" class="form-control center-text" id="Rpwd" name="Rpassword" placeholder="Retype Password" ng-model="password" required>
+            <div ng-messages="registration.Rpassword.$error">
+              <div ng-message="required">This field is required</div>
+            </div>
+          </div>
+
+          <div class="checkbox center padding">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <div class="padding">
+            <button type="submit" ng-click="register()" class="btn btn-default btn-block submit">Register</button>
+                {{message}}
+          </div>
+
+          <div style="width: 50%; margin:auto;" class="padding">
+            <a class="center" href="#login">Login Here</a>
+            <label>or</label>
+            <a  class="center" href="">Forgot Password?</a>
+          </div>
+          
+        </form>
+      </div>
+    </div>

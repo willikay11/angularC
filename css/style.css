@@ -1,0 +1,59 @@
+.header {
+  background-image: url(../img/image_blur.jpg);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-size: cover; }
+
+.toolbar {
+  background-color: #600;
+  height: 80px; }
+
+.center {
+  margin: auto;
+  width: 30%;
+  background-color: RGBA(255, 255, 255, 0.53); }
+
+.padding {
+  padding: 10px; }
+
+/* Mixin */
+.corners {
+  border-radius: 20px; }
+
+.top-corners {
+  border-radius: 20px 20px 0px 0px; }
+
+.vertical {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.center-text {
+  text-align: center; }
+
+.text-background {
+  background-color: #3b4148;
+  color: #FFF; }
+
+.span {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.submit {
+  background-color: #f99;
+  color: #FFF; }
+
+.login_links {
+  margin: auto;
+  width: 50%; }
+
+/*# sourceMappingURL=style.css.map */

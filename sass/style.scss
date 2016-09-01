@@ -1,0 +1,74 @@
+$background-header-color: #cceeff;
+$toolbar-color: #600;
+$textinput-background: #3b4148;
+$button-color: #f99;
+
+
+.header {
+	background-image:url(../img/image_blur.jpg);
+	width:100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-size: cover;
+}
+
+.toolbar{
+	background-color:$toolbar-color;
+	height:80px;
+}
+.center{
+    margin: auto;
+    width: 30%;
+    height: 40%;
+   	background-color: RGBA(255, 255, 255, 0.53);
+}
+.padding{
+	padding:10px;
+}
+
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.corners{
+	 border-radius: 20px;
+}
+
+.top-corners{
+	border-radius: 20px 20px 0px 0px;
+}
+
+.vertical{
+	@include vertical-align();
+}
+
+.center-text{
+	text-align: center;
+}
+
+.text-background{
+	background-color: $textinput-background;
+	color: #FFF
+}
+
+.span{
+	color: #FFF;
+	text-align: center;
+	@include vertical-align();
+}
+
+.submit{
+	background-color: $button-color;
+	color: #FFF;
+}
+
+.login_links{
+	margin: auto;
+    width: 50%;
+}

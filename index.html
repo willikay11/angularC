@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="templatesApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- This meta section is important as it handles the responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShareRide</title>
+ 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" rel="stylesheet">
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
+
+    <!-- Load ngMessages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-messages.min.js"></script>
+
+    <!--Load ui-routing -->
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+
+  </head>
+  <body class="login">
+
+    <div ui-view></div>  
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/templates.js"></script>
+  </body>
+</html>
